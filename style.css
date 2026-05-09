@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5dc;
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    background-color: #deb887;
+
+    .topbar {
+        width: 64rem;
+        height: 2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social {
+            display: flex;
+
+            ul {
+                display: flex;
+                gap: 1rem;
+
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 4rem;
+        background-color: #1b1b91;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            height: 4rem;
+            display: flex;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 1rem;
+                    color: #f5f5dc;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: #3f3fb7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#home {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(#deb887, #f5f5dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .conteudo {
+        width: 64rem;
+        margin: 0 auto;
+        border: 1px solid black;
+        display: flex;
+
+        .texto {
+            width: 50%;
+        }
+
+        .foto {
+            width: 30rem;
+            height: 30rem;
+            background-color: grey;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
