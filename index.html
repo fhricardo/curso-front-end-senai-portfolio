@@ -7,6 +7,9 @@
     <title>Portfolio do Flávio</title>
     <!-- Aqui também entram os link para arquivos CSS e JS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -18,19 +21,31 @@
             </div>
             <div class="social">
                 <ul>
-                    <li><a href="">Rede social 1</a></li>
-                    <li><a href="">Rede social 2</a></li>
-                    <li><a href="">Rede social 3</a></li>
+                    <li>
+                        <a href="">
+                            <i class="ph ph-instagram-logo"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ph ph-youtube-logo"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="ph ph-github-logo"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
         <nav>
             <ul>
                 <!-- li>a{Home} -->
-                <li><a href="">Home</a></li>
-                <li><a href="">Trabalhos</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -126,16 +141,55 @@
                 <div class="texto">
                     <p>Tem um projeto para tirar do papel?</p>
                     <p>Entre em contato e vamos conversar sobre ele!</p>
-                    <a href="tel:+5511947091137">Ligue agora</a>
-                    <a href="https://wa.me/5511947091137">Chame no WhatsApp</a>
-                    <a href="mailto:contact@flavioricardo.com.br">Envie um e-mail</a>
+                    <a href="tel:+5511947091137">
+                        <i class="ph ph-phone"></i>
+                        Ligue agora
+                    </a>
+                    <a href="https://wa.me/5511947091137">
+                        <i class="ph ph-whatsapp-logo"></i>
+                        Chame no WhatsApp
+                    </a>
+                    <a href="mailto:contact@flavioricardo.com.br">
+                        <i class="ph ph-mailbox"></i>
+                        Envie um e-mail
+                    </a>
                 </div>
                 <div class="formulario">
-
+                    <form>
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone">
+                        <label for="msg">Mensagem:</label>
+                        <textarea name="msg" id="msg"></textarea>
+                        <div class="btns">
+                            <button type="reset">Limpar</button>
+                            <button type="button">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <p>&copy;2026. Portfolio Flavio Ricardo.</p>
+    </footer>
+    <div class="modal">
+        <div class="conteudo">
+            <div class="fechar"><i class="ph ph-x"></i></div>
+            <div class="foto">
+                <img src="" alt="">
+            </div>
+            <h2>Título do Trabalho</h2>
+            <p>Descição completa do trabalho. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nostrum
+                culpa numquam pariatur obcaecati odit. Fuga voluptates sapiente facere sequi modi culpa quasi iusto!
+                Temporibus nulla molestias sint inventore id illo explicabo maiores deleniti officia, repudiandae minus
+                doloribus molestiae iste labore eos praesentium unde in, facere blanditiis vel necessitatibus quisquam
+                dicta? Fugiat, voluptas esse.</p>
+        </div>
+    </div>
 
 </body>
 
